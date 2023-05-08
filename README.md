@@ -53,13 +53,13 @@ The mazes were then build up inside Gazebo
   src="./01_Maze-Worlds/Maze_2.png"
   alt="Alt text"
   title="Small maze"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 50px">
 
 <img
   src="./01_Maze-Worlds/Maze_3.png"
   alt="Alt text"
   title="Large maze"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 50px">
 
 
 ### Navigation
