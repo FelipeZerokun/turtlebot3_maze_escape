@@ -12,9 +12,9 @@ Group participants:
 
 ## Project description
 
-The project aim is to develop and implement a search or navigation algorithm that lets the Turtlebot3 solve different kind of mazeconfigurations effectively in a virtual environment.
+The project aim is to develop and implement a search or navigation algorithm that lets the Turtlebot3 solve different kind of maze configurations effectively in a virtual environment.
 
-![image](/images_06/maze_concept.png)
+![image](./images_06/maze_concept.png)
 
 
 ## General objectives
