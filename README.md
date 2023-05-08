@@ -40,9 +40,8 @@ For the second scenario, the robot has some information about the location of th
 
 ## Project components
 
-This project uses the Turtlebot3 Burger robot, and its different components like:
-- Laser Distance Sensors LS - 01 (LiDAR sensor)
-- 
+This project uses the Turtlebot3 Burger robot, which has a LiDAR sensor incorporated and will be used for the system navigation.
+The other components that we will be working on are the following:
 
 ### Maze
 
@@ -51,20 +50,21 @@ The mazes were then build up inside Gazebo
 
 <img
   src="./01_Maze-Worlds/Maze_2.png"
-  alt="Alt text"
+  alt="small_maze"
   title="Small maze"
-  style="display: inline-block; margin: 0 auto; width="100" height="200">
-
-<img
-  src="./01_Maze-Worlds/Maze_3.png"
-  alt="Alt text"
-  title="Large maze"
-  style="display: inline-block; margin: 0 auto; width="100" height="200">
+  style="display: inline-block"; width="100" height="200">
 
 
 ### Navigation
 
+For the navigation, the in-build SLAM package that generates a map using LiDar sensor will be used so that the robot is able to navigate through the maze without bumping into the walls and can find a way out of the maze                                                                
 
 
 ### Escape algorithm
 
+For the two scenarios there are different algorithms that can be used, but one is commonly used for this systems.
+
+The A* algorithim will be explored and we will try to use it for this project.
+
+                                                        
+                                                     
