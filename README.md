@@ -49,7 +49,13 @@ This project uses the Turtlebot3 Burger robot, and its different components like
 Two mazes were randomly generated in the following [site.](https://www.mazegenerator.net)
 The mazes were then build up inside Gazebo
 
-![image](./01_Maze-Worlds/Maze_2.png)   ![image](./01_Maze-Worlds/Maze_3.png)
+<img
+  src="./01_Maze-Worlds/Maze_2.png"
+  alt="Alt text"
+  title="Small maze"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+![image](./01_Maze-Worlds/Maze_3.png "large maze")
 
 ### Navigation
 
