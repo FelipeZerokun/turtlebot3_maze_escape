@@ -52,7 +52,7 @@ The mazes were then build up inside Gazebo
   src="./01_Maze-Worlds/Maze_2.png"
   alt="small_maze"
   title="Small maze"
-  style="display: inline-block"; width="100" height="200">
+  style="display: inline-block; margin: 0 auto; width="100" height="200">
 
 
 ### Navigation
