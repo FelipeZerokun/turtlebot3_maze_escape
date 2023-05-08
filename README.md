@@ -49,9 +49,11 @@ This project uses the Turtlebot3 Burger robot, and its different components like
 Two mazes were randomly generated in the following [site.](https://www.mazegenerator.net)
 The mazes were then build up inside Gazebo
 
-![image](./01_Maze-Worlds/Maze_2.png)
+![image](./01_Maze-Worlds/Maze_2.png)   ![image](./01_Maze-Worlds/Maze_3.png)
 
 ### Navigation
+
+
 
 ### Escape algorithm
 
