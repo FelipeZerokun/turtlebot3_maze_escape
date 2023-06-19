@@ -2,7 +2,7 @@
 
 **Master course**: Artificial Intelligence for Smart Sensors and Actuators
 **Lecture**: Case Study: Autonomous Systems
-**Professor**: Ginu
+**Professor**: Alunkal Ginu Paul
 
 ### Group members:
 - Angeles Gil
@@ -30,7 +30,7 @@ The sorting process is the following:
 5. The robot will drop the object in the container, and will calculate its path back to the IDLE position.
 6. The process will repeat for the next object indefinitely.
 
-### Environment setup
+## Environment setup
 
 The project was made for Ubuntu Focal (20.04), ROS noetic distribution and a Gazebo version XX.XX.
 To setup the environment, follow this steps:
