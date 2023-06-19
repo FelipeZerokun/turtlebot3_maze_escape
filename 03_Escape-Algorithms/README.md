@@ -1,7 +1,9 @@
 # SCARA robot for sorting between Cylindrical and Cubical objects in Gazebo
 
-**Master course**: Artificial Intelligence for Smart Sensors and Actuators
-**Lecture**: Case Study: Autonomous Systems
+**Master course**: Artificial Intelligence for Smart Sensors and Actuators.
+
+**Lecture**: Case Study: Autonomous Systems.
+
 **Professor**: Alunkal Ginu Paul
 
 ### Group members:
