@@ -1,30 +1,14 @@
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-***__IMPORTANT__***
-
-***__Point location defined in meter for current Path planning:__***
-
-* ***Spawn location (object): x=0.17 ; y=0.41***
-* ***Box for dropping squares: x=0.32 ; y=-0.38***
-* ***Box for dropping cylinders(next to converyor): x=0.32; y=-0.08***
-
-***__Angle values in radians for robot (J0 and J1) to do current Path planning:__***
-
-* ***__go to pick up: J0=0.577 ; J1=1.325__***
-* ***__go to drop square: J0=-0 .165 ; J1=-0.766__***
-* ***__got to drop cylinder: J0=-0.0462 ; J1=1.1249__***
-* 
-
-***__Values for J2(up/down) AND for J4(open/close)__***
-
-* ***J2 --> up=0.05 ; down=-0.03***
-* ***J4--> open=-0.001 ; close=0.035***
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-
-
 # SCARA robot for sorting between Cylindrical and Cubical objects in Gazebo
+
+**Master course**: Artificial Intelligence for Smart Sensors and Actuators
+**Lecture**: Case Study: Autonomous Systems
+
+### Group members:
+- Angeles Gil
+- Contreras Ruben
+- Gatti Felix
+- Rojas Felipe
+
 
 ### Project Description
 
@@ -54,24 +38,20 @@ To setup the environment, follow this steps:
 
 1. Copy the "scara_robot_project" folder into your src directory and then use catkin_make command
 2. Then install the controller plugin:
+	1. sudo apt update
+	2. sudo apt-get install ros-noetic-ros-control ros-noetic-ros-controllers
+	3. sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
 
-   ```
-   1\. sudo apt update
-   
-   2\. sudo apt-get install ros-noetic-ros-control ros-noetic-ros-controllers
-   
-   3\. sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
-   
-   ```
+### Running the simulation
 
-**__GAZEBO ENVIRONTMENT AND SIMULATION__**
+Once the package has been setup and the controllers have been installed, the simulation on Gazebo can be launched by following the next steps:
 
 1. launch Gazebo environment using
+```python
+s = "roslaunch scara_robot_project initialization.launch"
+print s
+```
 
-   ```
-   1\. roslaunch scara_robot_project initialization.launch
-   
-   ```
 2. launch spawn object
 
    ```
