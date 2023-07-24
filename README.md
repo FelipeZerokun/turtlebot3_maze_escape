@@ -40,13 +40,9 @@ After the first escape, the map is saved for that specific maze. So, if the robo
 - Create an environment in Gazebo with a Maze that the Turtlebot3 can explore and solve.
 - Get readings from the LiDAR sensor scan and 
 - Implement the solution found for the Python simulation.
-- 
-
-- Defining a localization/mapping method to navigate the maze in an ordered behaviour.
-
+- Make the robot move in the maze based on the radar and map information
 - Implement a search algorithm for the Turtlebot3 so it can get out of the maze in the fastest way possible.
 
-- Implement the same algorithm in a Real-world scenario, where a Physical Turtlebot3 is able to solve a simple maze.
 
 ## Project components
 
