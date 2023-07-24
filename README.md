@@ -51,15 +51,11 @@ The other components that we will be working on are the following:
 
 ### Maze
 
-Two mazes were randomly generated in the following [site.](https://www.mazegenerator.net)
+Several mazes were randomly generated in the following [site.](https://www.mazegenerator.net)
 The mazes were then build up inside Gazebo
 
-                                                                        
-<img
-  src="./01_Maze-Worlds/Maze_2.png"
-  alt="maze_01"
-  title="Small maze"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+![image](./res/images/Maze_2.png)
+
 
 
 ### Navigation
