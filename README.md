@@ -24,6 +24,11 @@ The established scenario for the project is that the robot has no "knowledge" ab
 The maze and the robot are going to be in a simulated environment inside Gazebo. The robot is going to always start in the center of the maze.  It should use the LiDAR sensor to detect its surroundings and to map the maze in RViz.
 After the first escape, the map is saved for that specific maze. So, if the robot has to escape from the maze again, it will have a known route for this case.
 
+Several mazes were randomly generated in the following [site.](https://www.mazegenerator.net)
+The mazes were then build up inside Gazebo
+
+![image](./res/images/Maze_2.png)
+
 ## Project objectives
 
 ### General objectives
@@ -43,31 +48,22 @@ After the first escape, the map is saved for that specific maze. So, if the robo
 - Make the robot move in the maze based on the radar and map information
 - Implement a search algorithm for the Turtlebot3 so it can get out of the maze in the fastest way possible.
 
-
-## Project components
-
+- 
 This project uses the Turtlebot3 Burger robot, which has a LiDAR sensor incorporated and will be used for the system navigation.
 The other components that we will be working on are the following:
 
-### Maze
+## Python simulation and mathematical solution
 
-Several mazes were randomly generated in the following [site.](https://www.mazegenerator.net)
-The mazes were then build up inside Gazebo
+The first part of the project was to simulate 
 
-![image](./res/images/Maze_2.png)
+## Gazebo implementation
 
+## Localization
 
+## Mapping
 
-### Navigation
+## Navigation
 
-For the navigation, the in-build SLAM package that generates a map using LiDar sensor will be used so that the robot is able to navigate through the maze without bumping into the walls and can find a way out of the maze                                                                
+## Results
 
-
-### Escape algorithm
-
-For the two scenarios there are different algorithms that can be used, but one is commonly used for this systems.
-
-The A* algorithim will be explored and we will try to use it for this project.
-
-                                                        
-                                                     
+## Conclusion
