@@ -18,19 +18,29 @@ The project aim is to develop and implement a search or navigation algorithm tha
 
 For the maze escape solution, two scenarios were thought.
 
-### First scenario
+### Established scenario 
 
-The first scenario supposes that the robot has no "knowledge" about the environment. This means, it was to explore everything until it finds and exit of the maze.
-For subsequent escapes from the maze, the robot will already "know" its way inside the maze and escape in much less time.
+The established scenario for the project is that the robot has no "knowledge" about the environment. This means, the robot should do some exploration around the maze until it finds its way out.
+The maze and the robot are going to be in a simulated environment inside Gazebo. The robot is going to always start in the center of the maze.  It should use the LiDAR sensor to detect its surroundings and to map the maze in RViz.
+After the first escape, the map is saved for that specific maze. So, if the robot has to escape from the maze again, it will have a known route for this case.
 
-### Second scenario
+## Project objectives
 
-For the second scenario, the robot has some information about the location of the exit. In this approach, the robot will try to escape while minimizing the exploration and the time inside the maze.
+### General objectives
+- Create a virtual environment inside Gazebo with a Turtlebot3 model "Burger" and a randomly generated maze in it.
+- Develop python scripts for the localization of the Robot and mapping the environment around it.
+- Implement an algorithm that allows the robot to navigate and map the maze without collision until the robot is out of the maze.
+- Save the solution map for the maze and use it again for further escapes of the robot in the same maze.
 
+## Specific objectives
 
-## General objectives
-
+- Simulate a robot in a Python environment.
+- Implement a mathematical solution to escape a random maze for the Python simulation.
+- With the solution, use an algorithm to identify the path from the exit to the starting point of the robot.
 - Create an environment in Gazebo with a Maze that the Turtlebot3 can explore and solve.
+- Get readings from the LiDAR sensor scan and 
+- Implement the solution found for the Python simulation.
+- 
 
 - Defining a localization/mapping method to navigate the maze in an ordered behaviour.
 
