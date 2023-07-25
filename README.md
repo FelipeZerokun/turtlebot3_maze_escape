@@ -64,14 +64,27 @@ For the Gazebo implementation, we made two launch files:
 The project was originally made inside a Docker container with the following characteristics
 
 #### Requirements:
-To set up the environment, and get the project to run in your computer you'll need:
+- Ubuntu 20.04.6 LTS (Focal)
+- ROS Noetic Ninjemys
+- Gazebo 11
+- RViz
+- Python 3.9
 
 #### Environment setup
 Make sure the model is the burger with the following command
 ```
 export TURTLEBOT3_MODEL="burger"
+
 ```
 
+To setup the Gazebo environment with the Rviz and the required ROS packages, run the following launch files:
+```
+roslaunch /turtlebot3_final_project/turtlebot3_maze.launch
+roslaunch /turtlebot3_final_project/turtlebot3_navigation.launch
+
+```
+
+Gazebo should open with the Maze and the Turtlebot3 robot in the middle of it. Also Rviz should be open, and mapping the surroundings of the robot.
 ## Localization
 
 ## Mapping
