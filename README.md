@@ -46,17 +46,31 @@ The mazes were then build up inside Gazebo
 - Get readings from the LiDAR sensor scan and 
 - Implement the solution found for the Python simulation.
 - Make the robot move in the maze based on the radar and map information
-- Implement a search algorithm for the Turtlebot3 so it can get out of the maze in the fastest way possible.
+- Implement a search algorithm for the Turtlebot3 inside Gazebo so it can get out of the maze in the fastest way possible.
 
-- 
-This project uses the Turtlebot3 Burger robot, which has a LiDAR sensor incorporated and will be used for the system navigation.
-The other components that we will be working on are the following:
 
 ## Python simulation and mathematical solution
 
-The first part of the project was to simulate 
+The first part of the project was to simulate the maze environment and the robot behaviour in a Python environment. 
 
 ## Gazebo implementation
+
+For the Gazebo implementation, we made two launch files:
+
+- Turtlebot3_maze.launch: For the Gazebo world with the turtlebot3 in the middle of the world.
+- turtlebot3_navigation.launch For the Rviz launch and the Move Base navigation package.
+
+### Project setup
+The project was originally made inside a Docker container with the following characteristics
+
+#### Requirements:
+To set up the environment, and get the project to run in your computer you'll need:
+
+#### Environment setup
+Make sure the model is the burger with the following command
+```
+export TURTLEBOT3_MODEL="burger"
+```
 
 ## Localization
 
