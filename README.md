@@ -53,6 +53,21 @@ The mazes were then build up inside Gazebo
 
 The first part of the project was to simulate the maze environment and the robot behaviour in a Python environment. 
 
+### Maze simulation and LiDAR scan simulation
+The robot uses a Lidar scan sensor to perceive its surroundings. The maze environment was replicated in a Python environment to test the maze-escape logic. This was done in a [Jupyter Notebook](test/Pure-Simulation/FWP_ROS-03-Explorations_w_BorderExtend.ipynb).
+Using images from random-generated mazes using the website [Maze Generator](https://www.mazegenerator.net), a "robot" is located in the middle of the image.
+Emulating how a Lidar sensor works, the robot will scan its surroudings, generating a list of values with the distance of objects around the robot, limited by a scan range. 
+
+![Python simulation](./res/images/best_angles_simulation.png)
+
+### Path planning logic
+To explore and navigate through the maze, a logic for optimal paths was implemented. From the list of points returned by the Lidar scan, they are split depending on "open spaces" detected in the list. It is considered an open space if the value in the list is equal to the maximum range of the lidar scan (This means no object was detected inside the scan range). 
+For each of the sections with walls, a local minima is calculated as the most optimal point to move. In the case of open spaces, the center point of if will be considered as the most optimal point to move.
+
+### Exploration
+
+![Footprint implementation](./res/images/gradient_implementation.png)
+
 ## Gazebo implementation
 
 For the Gazebo implementation, we made two launch files:
@@ -85,11 +100,7 @@ roslaunch /turtlebot3_final_project/turtlebot3_navigation.launch
 ```
 
 Gazebo should open with the Maze and the Turtlebot3 robot in the middle of it. Also Rviz should be open, and mapping the surroundings of the robot.
-## Localization
 
-## Mapping
-
-## Navigation
 
 ## Results
 
