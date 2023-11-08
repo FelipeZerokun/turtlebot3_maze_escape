@@ -14,7 +14,7 @@ Group participants:
 
 The project aim is to develop and implement a search or navigation algorithm that lets the Turtlebot3 solve different kind of maze configurations effectively in a virtual environment.
 
-![image](./res/images/maze_concept.png)
+<img src="./res/images/ROS_Simplification.png" alt="ROS concept" height="200"/>
 
 For the maze escape solution, two scenarios were thought.
 
@@ -27,7 +27,7 @@ After the first escape, the map is saved for that specific maze. So, if the robo
 Several mazes were randomly generated in the following [site.](https://www.mazegenerator.net)
 The mazes were then build up inside Gazebo
 
-![image](./res/images/Maze_2.png)
+<img src="./res/images/Maze_2.png" alt="Maze" height="200"/>
 
 ## Project objectives
 
@@ -58,7 +58,7 @@ The robot uses a Lidar scan sensor to perceive its surroundings. The maze enviro
 Using images from random-generated mazes using the website [Maze Generator](https://www.mazegenerator.net), a "robot" is located in the middle of the image.
 Emulating how a Lidar sensor works, the robot will scan its surroudings, generating a list of values with the distance of objects around the robot, limited by a scan range. 
 
-![Python simulation](./res/images/best_angles_simulation.png)
+<img src="./res/images/Scan_Operations_2.png" alt="Best angles" height="300"/>
 
 ### Path planning logic
 To explore and navigate through the maze, a logic for optimal paths was implemented. From the list of points returned by the Lidar scan, they are split depending on "open spaces" detected in the list. It is considered an open space if the value in the list is equal to the maximum range of the lidar scan (This means no object was detected inside the scan range). 
@@ -66,7 +66,7 @@ For each of the sections with walls, a local minima is calculated as the most op
 
 ### Exploration
 
-![Footprint implementation](./res/images/gradient_implementation.png)
+<img src="./res/images/Gradient_Example.png" alt="Footprint" height="300"/>
 
 ## Gazebo implementation
 
@@ -115,6 +115,6 @@ This allows the robot to outpace its own footprint, otherwise the movement proba
 Finally the gradient size is directly correlated with the explorations speed, with high values forcing the robot to quickly explore unknown positions. 
 Throughout the performed testing the gradient size has shown to be optimal around one to three.
 
-![Footprint implementation](./res/images/Python_Simulation.png)
+<img src="./res/images/Python_Simulation.png" alt="Python sim" height="300"/>
 
 ## Conclusion
