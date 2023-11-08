@@ -115,5 +115,6 @@ This allows the robot to outpace its own footprint, otherwise the movement proba
 Finally the gradient size is directly correlated with the explorations speed, with high values forcing the robot to quickly explore unknown positions. 
 Throughout the performed testing the gradient size has shown to be optimal around one to three.
 
+![Footprint implementation](./res/images/Python_Simulation.png)
 
 ## Conclusion
