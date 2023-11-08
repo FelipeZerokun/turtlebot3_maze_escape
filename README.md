@@ -104,4 +104,16 @@ Gazebo should open with the Maze and the Turtlebot3 robot in the middle of it. A
 
 ## Results
 
+The derived algorithms were implemented and tested in Python for an image environment and using ROS in a Gazebo world.
+Generally the main parameters (Tab. \ref{tab: Sim Param}) for both simulations are the scan range, the footprint size and the gradient size.
+
+Changing the scan range will allow the robot to perceive more of its environment.
+For the optimal performance in both simulations the scan range should be around the size of the largest to be expected room inside of the maze.
+This will prevent any situations where the robot is incapable of detecting any wall.
+Given the scan range the footprint size is always smaller, around 50 to 75\% of the scan range.
+This allows the robot to outpace its own footprint, otherwise the movement probability calculations based on the occupancy grid will return equal values.  
+Finally the gradient size is directly correlated with the explorations speed, with high values forcing the robot to quickly explore unknown positions. 
+Throughout the performed testing the gradient size has shown to be optimal around one to three.
+
+
 ## Conclusion
